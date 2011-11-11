@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1916CF3146D2C0A0039F9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF2146D2C0A0039F9AC /* UIKit.framework */; };
+		E1916CF5146D2C0A0039F9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF4146D2C0A0039F9AC /* Foundation.framework */; };
+		E1916CF7146D2C0A0039F9AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */; };
+		E1916CF9146D2C0A0039F9AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF8146D2C0A0039F9AC /* CoreData.framework */; };
+		E1916CFF146D2C0A0039F9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1916CFD146D2C0A0039F9AC /* InfoPlist.strings */; };
+		E1916D01146D2C0A0039F9AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D00146D2C0A0039F9AC /* main.m */; };
+		E1916D05146D2C0A0039F9AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D04146D2C0A0039F9AC /* AppDelegate.m */; };
+		E1916D08146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1916D06146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard */; };
+		E1916D0B146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1916D09146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard */; };
+		E1916D0E146D2C0A0039F9AC /* wp3mock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1916D0C146D2C0A0039F9AC /* wp3mock.xcdatamodeld */; };
+		E1916D11146D2C0A0039F9AC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D10146D2C0A0039F9AC /* MasterViewController.m */; };
+		E1916D14146D2C0A0039F9AC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D13146D2C0A0039F9AC /* DetailViewController.m */; };
+		E1916D1C146D2C0A0039F9AC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916D1B146D2C0A0039F9AC /* SenTestingKit.framework */; };
+		E1916D1D146D2C0A0039F9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF2146D2C0A0039F9AC /* UIKit.framework */; };
+		E1916D1E146D2C0A0039F9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF4146D2C0A0039F9AC /* Foundation.framework */; };
+		E1916D1F146D2C0A0039F9AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF8146D2C0A0039F9AC /* CoreData.framework */; };
+		E1916D27146D2C0A0039F9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1916D25146D2C0A0039F9AC /* InfoPlist.strings */; };
+		E1916D2A146D2C0A0039F9AC /* wp3mockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D29146D2C0A0039F9AC /* wp3mockTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1916D20146D2C0A0039F9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1916CE5146D2C0A0039F9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1916CED146D2C0A0039F9AC;
+			remoteInfo = wp3mock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1916CEE146D2C0A0039F9AC /* wp3mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wp3mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1916CF2146D2C0A0039F9AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1916CF4146D2C0A0039F9AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1916CF8146D2C0A0039F9AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E1916CFC146D2C0A0039F9AC /* wp3mock-Info.plist */ = {isa = PBXFileReference; path = "wp3mock-Info.plist"; sourceTree = "<group>"; };
+		E1916CFE146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1916D00146D2C0A0039F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1916D02146D2C0A0039F9AC /* wp3mock-Prefix.pch */ = {isa = PBXFileReference; path = "wp3mock-Prefix.pch"; sourceTree = "<group>"; };
+		E1916D03146D2C0A0039F9AC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1916D04146D2C0A0039F9AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1916D07146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E1916D0A146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E1916D0D146D2C0A0039F9AC /* wp3mock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wp3mock.xcdatamodel; sourceTree = "<group>"; };
+		E1916D0F146D2C0A0039F9AC /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		E1916D10146D2C0A0039F9AC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E1916D12146D2C0A0039F9AC /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		E1916D13146D2C0A0039F9AC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E1916D1A146D2C0A0039F9AC /* wp3mockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wp3mockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1916D1B146D2C0A0039F9AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1916D24146D2C0A0039F9AC /* wp3mockTests-Info.plist */ = {isa = PBXFileReference; path = "wp3mockTests-Info.plist"; sourceTree = "<group>"; };
+		E1916D26146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1916D28146D2C0A0039F9AC /* wp3mockTests.h */ = {isa = PBXFileReference; path = wp3mockTests.h; sourceTree = "<group>"; };
+		E1916D29146D2C0A0039F9AC /* wp3mockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wp3mockTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1916CEB146D2C0A0039F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916CF3146D2C0A0039F9AC /* UIKit.framework in Frameworks */,
+				E1916CF5146D2C0A0039F9AC /* Foundation.framework in Frameworks */,
+				E1916CF7146D2C0A0039F9AC /* CoreGraphics.framework in Frameworks */,
+				E1916CF9146D2C0A0039F9AC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1916D16146D2C0A0039F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916D1C146D2C0A0039F9AC /* SenTestingKit.framework in Frameworks */,
+				E1916D1D146D2C0A0039F9AC /* UIKit.framework in Frameworks */,
+				E1916D1E146D2C0A0039F9AC /* Foundation.framework in Frameworks */,
+				E1916D1F146D2C0A0039F9AC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1916CE3146D2C0A0039F9AC = {
+			isa = PBXGroup;
+			children = (
+				E1916CFA146D2C0A0039F9AC /* wp3mock */,
+				E1916D22146D2C0A0039F9AC /* wp3mockTests */,
+				E1916CF1146D2C0A0039F9AC /* Frameworks */,
+				E1916CEF146D2C0A0039F9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1916CEF146D2C0A0039F9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1916CEE146D2C0A0039F9AC /* wp3mock.app */,
+				E1916D1A146D2C0A0039F9AC /* wp3mockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1916CF1146D2C0A0039F9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1916CF2146D2C0A0039F9AC /* UIKit.framework */,
+				E1916CF4146D2C0A0039F9AC /* Foundation.framework */,
+				E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */,
+				E1916CF8146D2C0A0039F9AC /* CoreData.framework */,
+				E1916D1B146D2C0A0039F9AC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1916CFA146D2C0A0039F9AC /* wp3mock */ = {
+			isa = PBXGroup;
+			children = (
+				E1916D03146D2C0A0039F9AC /* AppDelegate.h */,
+				E1916D04146D2C0A0039F9AC /* AppDelegate.m */,
+				E1916D06146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard */,
+				E1916D09146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard */,
+				E1916D0F146D2C0A0039F9AC /* MasterViewController.h */,
+				E1916D10146D2C0A0039F9AC /* MasterViewController.m */,
+				E1916D12146D2C0A0039F9AC /* DetailViewController.h */,
+				E1916D13146D2C0A0039F9AC /* DetailViewController.m */,
+				E1916D0C146D2C0A0039F9AC /* wp3mock.xcdatamodeld */,
+				E1916CFB146D2C0A0039F9AC /* Supporting Files */,
+			);
+			path = wp3mock;
+			sourceTree = "<group>";
+		};
+		E1916CFB146D2C0A0039F9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1916CFC146D2C0A0039F9AC /* wp3mock-Info.plist */,
+				E1916CFD146D2C0A0039F9AC /* InfoPlist.strings */,
+				E1916D00146D2C0A0039F9AC /* main.m */,
+				E1916D02146D2C0A0039F9AC /* wp3mock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1916D22146D2C0A0039F9AC /* wp3mockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1916D28146D2C0A0039F9AC /* wp3mockTests.h */,
+				E1916D29146D2C0A0039F9AC /* wp3mockTests.m */,
+				E1916D23146D2C0A0039F9AC /* Supporting Files */,
+			);
+			path = wp3mockTests;
+			sourceTree = "<group>";
+		};
+		E1916D23146D2C0A0039F9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1916D24146D2C0A0039F9AC /* wp3mockTests-Info.plist */,
+				E1916D25146D2C0A0039F9AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1916CED146D2C0A0039F9AC /* wp3mock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1916D2D146D2C0A0039F9AC /* Build configuration list for PBXNativeTarget "wp3mock" */;
+			buildPhases = (
+				E1916CEA146D2C0A0039F9AC /* Sources */,
+				E1916CEB146D2C0A0039F9AC /* Frameworks */,
+				E1916CEC146D2C0A0039F9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wp3mock;
+			productName = wp3mock;
+			productReference = E1916CEE146D2C0A0039F9AC /* wp3mock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1916D19146D2C0A0039F9AC /* wp3mockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1916D30146D2C0A0039F9AC /* Build configuration list for PBXNativeTarget "wp3mockTests" */;
+			buildPhases = (
+				E1916D15146D2C0A0039F9AC /* Sources */,
+				E1916D16146D2C0A0039F9AC /* Frameworks */,
+				E1916D17146D2C0A0039F9AC /* Resources */,
+				E1916D18146D2C0A0039F9AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1916D21146D2C0A0039F9AC /* PBXTargetDependency */,
+			);
+			name = wp3mockTests;
+			productName = wp3mockTests;
+			productReference = E1916D1A146D2C0A0039F9AC /* wp3mockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1916CE5146D2C0A0039F9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Automattic;
+			};
+			buildConfigurationList = E1916CE8146D2C0A0039F9AC /* Build configuration list for PBXProject "wp3mock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1916CE3146D2C0A0039F9AC;
+			productRefGroup = E1916CEF146D2C0A0039F9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1916CED146D2C0A0039F9AC /* wp3mock */,
+				E1916D19146D2C0A0039F9AC /* wp3mockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1916CEC146D2C0A0039F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916CFF146D2C0A0039F9AC /* InfoPlist.strings in Resources */,
+				E1916D08146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard in Resources */,
+				E1916D0B146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1916D17146D2C0A0039F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916D27146D2C0A0039F9AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1916D18146D2C0A0039F9AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1916CEA146D2C0A0039F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916D01146D2C0A0039F9AC /* main.m in Sources */,
+				E1916D05146D2C0A0039F9AC /* AppDelegate.m in Sources */,
+				E1916D0E146D2C0A0039F9AC /* wp3mock.xcdatamodeld in Sources */,
+				E1916D11146D2C0A0039F9AC /* MasterViewController.m in Sources */,
+				E1916D14146D2C0A0039F9AC /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1916D15146D2C0A0039F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1916D2A146D2C0A0039F9AC /* wp3mockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1916D21146D2C0A0039F9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1916CED146D2C0A0039F9AC /* wp3mock */;
+			targetProxy = E1916D20146D2C0A0039F9AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1916CFD146D2C0A0039F9AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1916CFE146D2C0A0039F9AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1916D06146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1916D07146D2C0A0039F9AC /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E1916D09146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1916D0A146D2C0A0039F9AC /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E1916D25146D2C0A0039F9AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1916D26146D2C0A0039F9AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1916D2B146D2C0A0039F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1916D2C146D2C0A0039F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1916D2E146D2C0A0039F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
+				INFOPLIST_FILE = "wp3mock/wp3mock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1916D2F146D2C0A0039F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
+				INFOPLIST_FILE = "wp3mock/wp3mock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1916D31146D2C0A0039F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wp3mock.app/wp3mock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
+				INFOPLIST_FILE = "wp3mockTests/wp3mockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E1916D32146D2C0A0039F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wp3mock.app/wp3mock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
+				INFOPLIST_FILE = "wp3mockTests/wp3mockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1916CE8146D2C0A0039F9AC /* Build configuration list for PBXProject "wp3mock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1916D2B146D2C0A0039F9AC /* Debug */,
+				E1916D2C146D2C0A0039F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1916D2D146D2C0A0039F9AC /* Build configuration list for PBXNativeTarget "wp3mock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1916D2E146D2C0A0039F9AC /* Debug */,
+				E1916D2F146D2C0A0039F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1916D30146D2C0A0039F9AC /* Build configuration list for PBXNativeTarget "wp3mockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1916D31146D2C0A0039F9AC /* Debug */,
+				E1916D32146D2C0A0039F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1916D0C146D2C0A0039F9AC /* wp3mock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1916D0D146D2C0A0039F9AC /* wp3mock.xcdatamodel */,
+			);
+			currentVersion = E1916D0D146D2C0A0039F9AC /* wp3mock.xcdatamodel */;
+			path = wp3mock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1916CE5146D2C0A0039F9AC /* Project object */;
+}
