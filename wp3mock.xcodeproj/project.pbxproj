@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E118FB5614742C1B0086C33C /* QuickPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118FB5514742C1B0086C33C /* QuickPostViewController.m */; };
+		E1259B781471185F00C290F0 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1259B741471185F00C290F0 /* libTestFlight.a */; };
+		E1259B791471185F00C290F0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B751471185F00C290F0 /* README.txt */; };
+		E1259B7A1471185F00C290F0 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B761471185F00C290F0 /* release_notes.txt */; };
+		E188F29D1475298A005CD61B /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E188F29C1475298A005CD61B /* ActivityViewController.m */; };
+		E188F2A114752BB0005CD61B /* SwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E188F2A014752BB0005CD61B /* SwipeTableViewCell.m */; };
 		E1916CF3146D2C0A0039F9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF2146D2C0A0039F9AC /* UIKit.framework */; };
 		E1916CF5146D2C0A0039F9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF4146D2C0A0039F9AC /* Foundation.framework */; };
 		E1916CF7146D2C0A0039F9AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */; };
@@ -17,14 +23,33 @@
 		E1916D08146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1916D06146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard */; };
 		E1916D0B146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1916D09146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard */; };
 		E1916D0E146D2C0A0039F9AC /* wp3mock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1916D0C146D2C0A0039F9AC /* wp3mock.xcdatamodeld */; };
-		E1916D11146D2C0A0039F9AC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D10146D2C0A0039F9AC /* MasterViewController.m */; };
-		E1916D14146D2C0A0039F9AC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D13146D2C0A0039F9AC /* DetailViewController.m */; };
 		E1916D1C146D2C0A0039F9AC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916D1B146D2C0A0039F9AC /* SenTestingKit.framework */; };
 		E1916D1D146D2C0A0039F9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF2146D2C0A0039F9AC /* UIKit.framework */; };
 		E1916D1E146D2C0A0039F9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF4146D2C0A0039F9AC /* Foundation.framework */; };
 		E1916D1F146D2C0A0039F9AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF8146D2C0A0039F9AC /* CoreData.framework */; };
 		E1916D27146D2C0A0039F9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1916D25146D2C0A0039F9AC /* InfoPlist.strings */; };
 		E1916D2A146D2C0A0039F9AC /* wp3mockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D29146D2C0A0039F9AC /* wp3mockTests.m */; };
+		E1916D3D146D45F50039F9AC /* QuickPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D3C146D45F50039F9AC /* QuickPhotoViewController.m */; };
+		E1916D40146D46560039F9AC /* QuickVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D3F146D46560039F9AC /* QuickVideoViewController.m */; };
+		E1916D43146D4A210039F9AC /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D42146D4A210039F9AC /* EditorViewController.m */; };
+		E1916D46146D4B0E0039F9AC /* logo_welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = E1916D44146D4B0E0039F9AC /* logo_welcome.png */; };
+		E1916D47146D4B0E0039F9AC /* logo_welcome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1916D45146D4B0E0039F9AC /* logo_welcome@2x.png */; };
+		E1916D4A146D4DBC0039F9AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D49146D4DBC0039F9AC /* LoginViewController.m */; };
+		E1916D4D146D4E610039F9AC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D4C146D4E610039F9AC /* MasterViewController.m */; };
+		E1916D50146D57220039F9AC /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D4F146D57220039F9AC /* WelcomeViewController.m */; };
+		E1916D53146D65440039F9AC /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D52146D65440039F9AC /* AccountViewController.m */; };
+		E1A9D018146D79DA00E8D426 /* asdf.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A9D017146D79DA00E8D426 /* asdf.png */; };
+		E1A9D01C146D7C3100E8D426 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9D01B146D7C3100E8D426 /* ReaderViewController.m */; };
+		E1AD1199147573E70027C2D0 /* read.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD1197147573E70027C2D0 /* read.png */; };
+		E1AD119A147573E70027C2D0 /* read@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD1198147573E70027C2D0 /* read@2x.png */; };
+		E1AD119E1475741C0027C2D0 /* pages.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD119C1475741C0027C2D0 /* pages.png */; };
+		E1AD119F1475741C0027C2D0 /* pages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD119D1475741C0027C2D0 /* pages@2x.png */; };
+		E1AD11A2147574940027C2D0 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A0147574940027C2D0 /* stats.png */; };
+		E1AD11A3147574940027C2D0 /* stats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A1147574940027C2D0 /* stats@2x.png */; };
+		E1AD11A6147574AC0027C2D0 /* posts.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A4147574AC0027C2D0 /* posts.png */; };
+		E1AD11A7147574AC0027C2D0 /* posts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A5147574AC0027C2D0 /* posts@2x.png */; };
+		E1AD11AA147574CB0027C2D0 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A8147574CB0027C2D0 /* comments.png */; };
+		E1AD11AB147574CB0027C2D0 /* comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A9147574CB0027C2D0 /* comments@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,30 +63,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E118FB5414742C1B0086C33C /* QuickPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickPostViewController.h; sourceTree = "<group>"; };
+		E118FB5514742C1B0086C33C /* QuickPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickPostViewController.m; sourceTree = "<group>"; };
+		E1259B741471185F00C290F0 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		E1259B751471185F00C290F0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E1259B761471185F00C290F0 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		E1259B771471185F00C290F0 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		E188F29B1475298A005CD61B /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		E188F29C1475298A005CD61B /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		E188F29F14752BB0005CD61B /* SwipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeTableViewCell.h; sourceTree = "<group>"; };
+		E188F2A014752BB0005CD61B /* SwipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeTableViewCell.m; sourceTree = "<group>"; };
 		E1916CEE146D2C0A0039F9AC /* wp3mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wp3mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1916CF2146D2C0A0039F9AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1916CF4146D2C0A0039F9AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E1916CF8146D2C0A0039F9AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E1916CFC146D2C0A0039F9AC /* wp3mock-Info.plist */ = {isa = PBXFileReference; path = "wp3mock-Info.plist"; sourceTree = "<group>"; };
+		E1916CFC146D2C0A0039F9AC /* wp3mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wp3mock-Info.plist"; sourceTree = "<group>"; };
 		E1916CFE146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E1916D00146D2C0A0039F9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E1916D02146D2C0A0039F9AC /* wp3mock-Prefix.pch */ = {isa = PBXFileReference; path = "wp3mock-Prefix.pch"; sourceTree = "<group>"; };
-		E1916D03146D2C0A0039F9AC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1916D02146D2C0A0039F9AC /* wp3mock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wp3mock-Prefix.pch"; sourceTree = "<group>"; };
+		E1916D03146D2C0A0039F9AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1916D04146D2C0A0039F9AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E1916D07146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E1916D0A146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		E1916D0D146D2C0A0039F9AC /* wp3mock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wp3mock.xcdatamodel; sourceTree = "<group>"; };
-		E1916D0F146D2C0A0039F9AC /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
-		E1916D10146D2C0A0039F9AC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E1916D12146D2C0A0039F9AC /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		E1916D13146D2C0A0039F9AC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E1916D1A146D2C0A0039F9AC /* wp3mockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wp3mockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1916D1B146D2C0A0039F9AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E1916D24146D2C0A0039F9AC /* wp3mockTests-Info.plist */ = {isa = PBXFileReference; path = "wp3mockTests-Info.plist"; sourceTree = "<group>"; };
+		E1916D24146D2C0A0039F9AC /* wp3mockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wp3mockTests-Info.plist"; sourceTree = "<group>"; };
 		E1916D26146D2C0A0039F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E1916D28146D2C0A0039F9AC /* wp3mockTests.h */ = {isa = PBXFileReference; path = wp3mockTests.h; sourceTree = "<group>"; };
+		E1916D28146D2C0A0039F9AC /* wp3mockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wp3mockTests.h; sourceTree = "<group>"; };
 		E1916D29146D2C0A0039F9AC /* wp3mockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wp3mockTests.m; sourceTree = "<group>"; };
+		E1916D3B146D45F50039F9AC /* QuickPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickPhotoViewController.h; sourceTree = "<group>"; };
+		E1916D3C146D45F50039F9AC /* QuickPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickPhotoViewController.m; sourceTree = "<group>"; };
+		E1916D3E146D46560039F9AC /* QuickVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickVideoViewController.h; sourceTree = "<group>"; };
+		E1916D3F146D46560039F9AC /* QuickVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickVideoViewController.m; sourceTree = "<group>"; };
+		E1916D41146D4A210039F9AC /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		E1916D42146D4A210039F9AC /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		E1916D44146D4B0E0039F9AC /* logo_welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_welcome.png; sourceTree = "<group>"; };
+		E1916D45146D4B0E0039F9AC /* logo_welcome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_welcome@2x.png"; sourceTree = "<group>"; };
+		E1916D48146D4DBC0039F9AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E1916D49146D4DBC0039F9AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E1916D4B146D4E600039F9AC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E1916D4C146D4E610039F9AC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E1916D4E146D57220039F9AC /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		E1916D4F146D57220039F9AC /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		E1916D51146D65440039F9AC /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		E1916D52146D65440039F9AC /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		E1A9D017146D79DA00E8D426 /* asdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asdf.png; sourceTree = "<group>"; };
+		E1A9D01A146D7C3100E8D426 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		E1A9D01B146D7C3100E8D426 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		E1AD1197147573E70027C2D0 /* read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read.png; sourceTree = "<group>"; };
+		E1AD1198147573E70027C2D0 /* read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read@2x.png"; sourceTree = "<group>"; };
+		E1AD119C1475741C0027C2D0 /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages.png; path = "../wordpress-iphone/pages.png"; sourceTree = "<group>"; };
+		E1AD119D1475741C0027C2D0 /* pages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pages@2x.png"; path = "../wordpress-iphone/pages@2x.png"; sourceTree = "<group>"; };
+		E1AD11A0147574940027C2D0 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = "../wordpress-iphone/stats.png"; sourceTree = "<group>"; };
+		E1AD11A1147574940027C2D0 /* stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stats@2x.png"; path = "../wordpress-iphone/stats@2x.png"; sourceTree = "<group>"; };
+		E1AD11A4147574AC0027C2D0 /* posts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = posts.png; path = "../wordpress-iphone/posts.png"; sourceTree = "<group>"; };
+		E1AD11A5147574AC0027C2D0 /* posts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "posts@2x.png"; path = "../wordpress-iphone/posts@2x.png"; sourceTree = "<group>"; };
+		E1AD11A8147574CB0027C2D0 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comments.png; path = "../wordpress-iphone/comments.png"; sourceTree = "<group>"; };
+		E1AD11A9147574CB0027C2D0 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@2x.png"; path = "../wordpress-iphone/comments@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +133,7 @@
 				E1916CF5146D2C0A0039F9AC /* Foundation.framework in Frameworks */,
 				E1916CF7146D2C0A0039F9AC /* CoreGraphics.framework in Frameworks */,
 				E1916CF9146D2C0A0039F9AC /* CoreData.framework in Frameworks */,
+				E1259B781471185F00C290F0 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +151,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1259B731471185F00C290F0 /* TestFlightSDK0.8 */ = {
+			isa = PBXGroup;
+			children = (
+				E1259B741471185F00C290F0 /* libTestFlight.a */,
+				E1259B751471185F00C290F0 /* README.txt */,
+				E1259B761471185F00C290F0 /* release_notes.txt */,
+				E1259B771471185F00C290F0 /* TestFlight.h */,
+			);
+			path = TestFlightSDK0.8;
+			sourceTree = "<group>";
+		};
 		E1916CE3146D2C0A0039F9AC = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +169,18 @@
 				E1916D22146D2C0A0039F9AC /* wp3mockTests */,
 				E1916CF1146D2C0A0039F9AC /* Frameworks */,
 				E1916CEF146D2C0A0039F9AC /* Products */,
+				E1916D44146D4B0E0039F9AC /* logo_welcome.png */,
+				E1916D45146D4B0E0039F9AC /* logo_welcome@2x.png */,
+				E1AD1197147573E70027C2D0 /* read.png */,
+				E1AD1198147573E70027C2D0 /* read@2x.png */,
+				E1AD119C1475741C0027C2D0 /* pages.png */,
+				E1AD119D1475741C0027C2D0 /* pages@2x.png */,
+				E1AD11A0147574940027C2D0 /* stats.png */,
+				E1AD11A1147574940027C2D0 /* stats@2x.png */,
+				E1AD11A4147574AC0027C2D0 /* posts.png */,
+				E1AD11A5147574AC0027C2D0 /* posts@2x.png */,
+				E1AD11A8147574CB0027C2D0 /* comments.png */,
+				E1AD11A9147574CB0027C2D0 /* comments@2x.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,16 +208,36 @@
 		E1916CFA146D2C0A0039F9AC /* wp3mock */ = {
 			isa = PBXGroup;
 			children = (
+				E1259B731471185F00C290F0 /* TestFlightSDK0.8 */,
+				E1A9D017146D79DA00E8D426 /* asdf.png */,
 				E1916D03146D2C0A0039F9AC /* AppDelegate.h */,
 				E1916D04146D2C0A0039F9AC /* AppDelegate.m */,
 				E1916D06146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard */,
 				E1916D09146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard */,
-				E1916D0F146D2C0A0039F9AC /* MasterViewController.h */,
-				E1916D10146D2C0A0039F9AC /* MasterViewController.m */,
-				E1916D12146D2C0A0039F9AC /* DetailViewController.h */,
-				E1916D13146D2C0A0039F9AC /* DetailViewController.m */,
 				E1916D0C146D2C0A0039F9AC /* wp3mock.xcdatamodeld */,
 				E1916CFB146D2C0A0039F9AC /* Supporting Files */,
+				E1916D3B146D45F50039F9AC /* QuickPhotoViewController.h */,
+				E1916D3C146D45F50039F9AC /* QuickPhotoViewController.m */,
+				E1916D3E146D46560039F9AC /* QuickVideoViewController.h */,
+				E1916D3F146D46560039F9AC /* QuickVideoViewController.m */,
+				E1916D41146D4A210039F9AC /* EditorViewController.h */,
+				E1916D42146D4A210039F9AC /* EditorViewController.m */,
+				E1916D48146D4DBC0039F9AC /* LoginViewController.h */,
+				E1916D49146D4DBC0039F9AC /* LoginViewController.m */,
+				E1916D4B146D4E600039F9AC /* MasterViewController.h */,
+				E1916D4C146D4E610039F9AC /* MasterViewController.m */,
+				E1916D4E146D57220039F9AC /* WelcomeViewController.h */,
+				E1916D4F146D57220039F9AC /* WelcomeViewController.m */,
+				E1916D51146D65440039F9AC /* AccountViewController.h */,
+				E1916D52146D65440039F9AC /* AccountViewController.m */,
+				E1A9D01A146D7C3100E8D426 /* ReaderViewController.h */,
+				E1A9D01B146D7C3100E8D426 /* ReaderViewController.m */,
+				E118FB5414742C1B0086C33C /* QuickPostViewController.h */,
+				E118FB5514742C1B0086C33C /* QuickPostViewController.m */,
+				E188F29B1475298A005CD61B /* ActivityViewController.h */,
+				E188F29C1475298A005CD61B /* ActivityViewController.m */,
+				E188F29F14752BB0005CD61B /* SwipeTableViewCell.h */,
+				E188F2A014752BB0005CD61B /* SwipeTableViewCell.m */,
 			);
 			path = wp3mock;
 			sourceTree = "<group>";
@@ -242,6 +346,21 @@
 				E1916CFF146D2C0A0039F9AC /* InfoPlist.strings in Resources */,
 				E1916D08146D2C0A0039F9AC /* MainStoryboard_iPhone.storyboard in Resources */,
 				E1916D0B146D2C0A0039F9AC /* MainStoryboard_iPad.storyboard in Resources */,
+				E1916D46146D4B0E0039F9AC /* logo_welcome.png in Resources */,
+				E1916D47146D4B0E0039F9AC /* logo_welcome@2x.png in Resources */,
+				E1A9D018146D79DA00E8D426 /* asdf.png in Resources */,
+				E1259B791471185F00C290F0 /* README.txt in Resources */,
+				E1259B7A1471185F00C290F0 /* release_notes.txt in Resources */,
+				E1AD1199147573E70027C2D0 /* read.png in Resources */,
+				E1AD119A147573E70027C2D0 /* read@2x.png in Resources */,
+				E1AD119E1475741C0027C2D0 /* pages.png in Resources */,
+				E1AD119F1475741C0027C2D0 /* pages@2x.png in Resources */,
+				E1AD11A2147574940027C2D0 /* stats.png in Resources */,
+				E1AD11A3147574940027C2D0 /* stats@2x.png in Resources */,
+				E1AD11A6147574AC0027C2D0 /* posts.png in Resources */,
+				E1AD11A7147574AC0027C2D0 /* posts@2x.png in Resources */,
+				E1AD11AA147574CB0027C2D0 /* comments.png in Resources */,
+				E1AD11AB147574CB0027C2D0 /* comments@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +398,17 @@
 				E1916D01146D2C0A0039F9AC /* main.m in Sources */,
 				E1916D05146D2C0A0039F9AC /* AppDelegate.m in Sources */,
 				E1916D0E146D2C0A0039F9AC /* wp3mock.xcdatamodeld in Sources */,
-				E1916D11146D2C0A0039F9AC /* MasterViewController.m in Sources */,
-				E1916D14146D2C0A0039F9AC /* DetailViewController.m in Sources */,
+				E1916D3D146D45F50039F9AC /* QuickPhotoViewController.m in Sources */,
+				E1916D40146D46560039F9AC /* QuickVideoViewController.m in Sources */,
+				E1916D43146D4A210039F9AC /* EditorViewController.m in Sources */,
+				E1916D4A146D4DBC0039F9AC /* LoginViewController.m in Sources */,
+				E1916D4D146D4E610039F9AC /* MasterViewController.m in Sources */,
+				E1916D50146D57220039F9AC /* WelcomeViewController.m in Sources */,
+				E1916D53146D65440039F9AC /* AccountViewController.m in Sources */,
+				E1A9D01C146D7C3100E8D426 /* ReaderViewController.m in Sources */,
+				E118FB5614742C1B0086C33C /* QuickPostViewController.m in Sources */,
+				E188F29D1475298A005CD61B /* ActivityViewController.m in Sources */,
+				E188F2A114752BB0005CD61B /* SwipeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +471,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -358,6 +486,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,7 +497,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -377,6 +506,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -389,6 +519,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
 				INFOPLIST_FILE = "wp3mock/wp3mock-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/wp3mock/TestFlightSDK0.8\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,9 +531,14 @@
 		E1916D2F146D2C0A0039F9AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wp3mock/wp3mock-Prefix.pch";
 				INFOPLIST_FILE = "wp3mock/wp3mock-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/wp3mock/TestFlightSDK0.8\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -458,6 +597,7 @@
 				E1916D2F146D2C0A0039F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1916D30146D2C0A0039F9AC /* Build configuration list for PBXNativeTarget "wp3mockTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +606,7 @@
 				E1916D32146D2C0A0039F9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

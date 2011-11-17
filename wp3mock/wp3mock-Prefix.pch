@@ -12,4 +12,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+    #import "TestFlight.h"
 #endif
+
+#define SHOULD_AUTOROTATE_TO(orientation) ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) || (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown))
+#define SHOULD_AUTOROTATE_TO_PORTRAIT_ONLY(orientation) ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) || (interfaceOrientation == UIInterfaceOrientationPortrait))

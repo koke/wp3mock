@@ -8,17 +8,17 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
-
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize masterViewController = __masterViewController;
 
 - (void)dealloc
 {
+    self.masterViewController = nil;
     [_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];
@@ -30,18 +30,11 @@
 {
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-        
-        UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
-        MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
     } else {
-        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-        MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
+//        UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+        self.masterViewController = (MasterViewController *)self.window.rootViewController;
     }
+    [TestFlight takeOff:@"pDmANmnnauWqZXHoDx6BOYpuPh3DjeTC8BjcQ4pDQpU"];
     return YES;
 }
 							

@@ -6,17 +6,13 @@
 //  Copyright (c) 2011 Automattic. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "QuickPostViewController.h"
 
-@class DetailViewController;
-
-#import <CoreData/CoreData.h>
-
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
-
-@property (strong, nonatomic) DetailViewController *detailViewController;
-
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@interface MasterViewController : UITabBarController {
+    BOOL loggedIn;
+    BOOL showingQuickPost;
+    UIView *quickPostView;
+}
+- (void)fakeLogin;
+@property (nonatomic, strong) IBOutlet QuickPostViewController *quickPostViewController;
 @end
