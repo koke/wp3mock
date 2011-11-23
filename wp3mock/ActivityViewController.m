@@ -7,15 +7,21 @@
 //
 
 #import "ActivityViewController.h"
+#import "CommentViewController.h"
 
+@interface ActivityViewController(PrivateMethods)
+- (void)addItemWithData:(NSDictionary *)itemData;
+@end
 
 @implementation ActivityViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Custom initialization
+        items = [[NSMutableArray array] retain];
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"NewComment" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+            [self addItemWithData:(NSDictionary *)note.object];
+        }];
     }
     return self;
 }
@@ -32,6 +38,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"activity did load");
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -51,6 +58,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navigationController.tabBarItem.badgeValue = nil;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -74,25 +82,34 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)addItemWithData:(NSDictionary *)itemData {
+    [items insertObject:itemData atIndex:0];
+    int badgeCount = [self.navigationController.tabBarItem.badgeValue intValue];
+    if (self.isViewLoaded && self.view.window) {
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationTop];
+    } else {
+        self.navigationController.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", badgeCount + 1];
+        [self.tableView reloadData];
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ActivityCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -100,6 +117,12 @@
     }
     
     // Configure the cell...
+    NSDictionary *itemData = [items objectAtIndex:indexPath.row];
+    NSString *authorName = [itemData objectForKey:@"authorName"];
+    NSString *postTitle = [itemData objectForKey:@"postTitle"];
+    NSString *content = [itemData objectForKey:@"content"];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ commented on %@", authorName, postTitle];
+    cell.detailTextLabel.text = content;
     
     return cell;
 }
@@ -143,18 +166,22 @@
 }
 */
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showComment"]) {
+        CommentViewController *commentViewController = (CommentViewController *)segue.destinationViewController;
+        commentViewController.comment = sender;
+    }
+}
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    [self performSegueWithIdentifier:@"showComment" sender:[items objectAtIndex:indexPath.row]];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 64.0f;
 }
 
 @end

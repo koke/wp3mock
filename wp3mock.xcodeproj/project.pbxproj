@@ -11,6 +11,8 @@
 		E1259B781471185F00C290F0 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1259B741471185F00C290F0 /* libTestFlight.a */; };
 		E1259B791471185F00C290F0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B751471185F00C290F0 /* README.txt */; };
 		E1259B7A1471185F00C290F0 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B761471185F00C290F0 /* release_notes.txt */; };
+		E184CE1F14768EB900ACC56B /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E184CE1E14768EB900ACC56B /* CommentViewController.m */; };
+		E184CE231476C52000ACC56B /* ReplyToCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E184CE221476C52000ACC56B /* ReplyToCommentViewController.m */; };
 		E188F29D1475298A005CD61B /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E188F29C1475298A005CD61B /* ActivityViewController.m */; };
 		E188F2A114752BB0005CD61B /* SwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E188F2A014752BB0005CD61B /* SwipeTableViewCell.m */; };
 		E1916CF3146D2C0A0039F9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1916CF2146D2C0A0039F9AC /* UIKit.framework */; };
@@ -38,6 +40,8 @@
 		E1916D4D146D4E610039F9AC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D4C146D4E610039F9AC /* MasterViewController.m */; };
 		E1916D50146D57220039F9AC /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D4F146D57220039F9AC /* WelcomeViewController.m */; };
 		E1916D53146D65440039F9AC /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1916D52146D65440039F9AC /* AccountViewController.m */; };
+		E1A3E97A14767C9900B4AB5A /* replyToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A3E97814767C9900B4AB5A /* replyToolbar.png */; };
+		E1A3E97B14767C9900B4AB5A /* replyToolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A3E97914767C9900B4AB5A /* replyToolbar@2x.png */; };
 		E1A9D018146D79DA00E8D426 /* asdf.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A9D017146D79DA00E8D426 /* asdf.png */; };
 		E1A9D01C146D7C3100E8D426 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9D01B146D7C3100E8D426 /* ReaderViewController.m */; };
 		E1AD1199147573E70027C2D0 /* read.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD1197147573E70027C2D0 /* read.png */; };
@@ -69,6 +73,10 @@
 		E1259B751471185F00C290F0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		E1259B761471185F00C290F0 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
 		E1259B771471185F00C290F0 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		E184CE1D14768EB900ACC56B /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		E184CE1E14768EB900ACC56B /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		E184CE211476C52000ACC56B /* ReplyToCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyToCommentViewController.h; sourceTree = "<group>"; };
+		E184CE221476C52000ACC56B /* ReplyToCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyToCommentViewController.m; sourceTree = "<group>"; };
 		E188F29B1475298A005CD61B /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		E188F29C1475298A005CD61B /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		E188F29F14752BB0005CD61B /* SwipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeTableViewCell.h; sourceTree = "<group>"; };
@@ -109,19 +117,21 @@
 		E1916D4F146D57220039F9AC /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		E1916D51146D65440039F9AC /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E1916D52146D65440039F9AC /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		E1A3E97814767C9900B4AB5A /* replyToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replyToolbar.png; sourceTree = "<group>"; };
+		E1A3E97914767C9900B4AB5A /* replyToolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replyToolbar@2x.png"; sourceTree = "<group>"; };
 		E1A9D017146D79DA00E8D426 /* asdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asdf.png; sourceTree = "<group>"; };
 		E1A9D01A146D7C3100E8D426 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
 		E1A9D01B146D7C3100E8D426 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
 		E1AD1197147573E70027C2D0 /* read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read.png; sourceTree = "<group>"; };
 		E1AD1198147573E70027C2D0 /* read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read@2x.png"; sourceTree = "<group>"; };
-		E1AD119C1475741C0027C2D0 /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages.png; path = "../wordpress-iphone/pages.png"; sourceTree = "<group>"; };
-		E1AD119D1475741C0027C2D0 /* pages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pages@2x.png"; path = "../wordpress-iphone/pages@2x.png"; sourceTree = "<group>"; };
-		E1AD11A0147574940027C2D0 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = "../wordpress-iphone/stats.png"; sourceTree = "<group>"; };
-		E1AD11A1147574940027C2D0 /* stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stats@2x.png"; path = "../wordpress-iphone/stats@2x.png"; sourceTree = "<group>"; };
-		E1AD11A4147574AC0027C2D0 /* posts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = posts.png; path = "../wordpress-iphone/posts.png"; sourceTree = "<group>"; };
-		E1AD11A5147574AC0027C2D0 /* posts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "posts@2x.png"; path = "../wordpress-iphone/posts@2x.png"; sourceTree = "<group>"; };
-		E1AD11A8147574CB0027C2D0 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comments.png; path = "../wordpress-iphone/comments.png"; sourceTree = "<group>"; };
-		E1AD11A9147574CB0027C2D0 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@2x.png"; path = "../wordpress-iphone/comments@2x.png"; sourceTree = "<group>"; };
+		E1AD119C1475741C0027C2D0 /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages.png; path = ../../WPiOS3/wp3mock/pages.png; sourceTree = "<group>"; };
+		E1AD119D1475741C0027C2D0 /* pages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pages@2x.png"; path = "../../WPiOS3/wp3mock/pages@2x.png"; sourceTree = "<group>"; };
+		E1AD11A0147574940027C2D0 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = ../../WPiOS3/wp3mock/stats.png; sourceTree = "<group>"; };
+		E1AD11A1147574940027C2D0 /* stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stats@2x.png"; path = "../../WPiOS3/wp3mock/stats@2x.png"; sourceTree = "<group>"; };
+		E1AD11A4147574AC0027C2D0 /* posts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = posts.png; path = ../../WPiOS3/wp3mock/posts.png; sourceTree = "<group>"; };
+		E1AD11A5147574AC0027C2D0 /* posts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "posts@2x.png"; path = "../../WPiOS3/wp3mock/posts@2x.png"; sourceTree = "<group>"; };
+		E1AD11A8147574CB0027C2D0 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comments.png; path = ../../WPiOS3/wp3mock/comments.png; sourceTree = "<group>"; };
+		E1AD11A9147574CB0027C2D0 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@2x.png"; path = "../../WPiOS3/wp3mock/comments@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +191,8 @@
 				E1AD11A5147574AC0027C2D0 /* posts@2x.png */,
 				E1AD11A8147574CB0027C2D0 /* comments.png */,
 				E1AD11A9147574CB0027C2D0 /* comments@2x.png */,
+				E1A3E97814767C9900B4AB5A /* replyToolbar.png */,
+				E1A3E97914767C9900B4AB5A /* replyToolbar@2x.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +250,10 @@
 				E188F29C1475298A005CD61B /* ActivityViewController.m */,
 				E188F29F14752BB0005CD61B /* SwipeTableViewCell.h */,
 				E188F2A014752BB0005CD61B /* SwipeTableViewCell.m */,
+				E184CE1D14768EB900ACC56B /* CommentViewController.h */,
+				E184CE1E14768EB900ACC56B /* CommentViewController.m */,
+				E184CE211476C52000ACC56B /* ReplyToCommentViewController.h */,
+				E184CE221476C52000ACC56B /* ReplyToCommentViewController.m */,
 			);
 			path = wp3mock;
 			sourceTree = "<group>";
@@ -361,6 +377,8 @@
 				E1AD11A7147574AC0027C2D0 /* posts@2x.png in Resources */,
 				E1AD11AA147574CB0027C2D0 /* comments.png in Resources */,
 				E1AD11AB147574CB0027C2D0 /* comments@2x.png in Resources */,
+				E1A3E97A14767C9900B4AB5A /* replyToolbar.png in Resources */,
+				E1A3E97B14767C9900B4AB5A /* replyToolbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +427,8 @@
 				E118FB5614742C1B0086C33C /* QuickPostViewController.m in Sources */,
 				E188F29D1475298A005CD61B /* ActivityViewController.m in Sources */,
 				E188F2A114752BB0005CD61B /* SwipeTableViewCell.m in Sources */,
+				E184CE1F14768EB900ACC56B /* CommentViewController.m in Sources */,
+				E184CE231476C52000ACC56B /* ReplyToCommentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

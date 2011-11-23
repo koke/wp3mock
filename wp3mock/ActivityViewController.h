@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ActivityViewController : UITableViewController
-
+@interface ActivityViewController : UITableViewController {
+    NSMutableArray *items;
+}
+- (void)addItemWithData:(NSDictionary *)itemData;
 @end

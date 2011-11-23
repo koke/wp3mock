@@ -769,6 +769,21 @@
             </objects>
             <point key="canvasLocation" x="1115" y="317"/>
         </scene>
+        <scene sceneID="A8a-So-9Wc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="la0-Rh-jZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="VYU-ZJ-OKn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Activity" image="comments.png" id="RVr-LZ-To3"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9w7-wt-yA0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CUI-5C-Cgp" kind="relationship" relationship="rootViewController" id="eUR-6o-DEZ"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1113" y="-276"/>
+        </scene>
         <scene sceneID="hzj-g1-mDB">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBa-MM-w3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1494,24 +1509,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jn2-0C-yf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="CUI-5C-Cgp" customClass="ActivityViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7YH-QC-hgN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" textLabel="LBr-zM-jpW" imageView="UNr-dH-LUU" rowHeight="64" style="IBUITableViewCellStyleDefault" id="kGj-rx-96T" customClass="SwipeTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" textLabel="LBr-zM-jpW" detailTextLabel="s0u-pX-P1g" imageView="pbn-aY-T2v" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="kGj-rx-96T" customClass="SwipeTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="63"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="You posted &quot;That's cute&quot; on &quot;I like demos&quot; and somebody liked it very much indeed yeah!" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBr-zM-jpW">
-                                            <rect key="frame" x="73" y="0.0" width="217" height="63"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="You posted &quot;That's cute&quot; on &quot;I like demos&quot; and somebody liked it very much indeed yeah!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBr-zM-jpW">
+                                            <rect key="frame" x="73" y="4" width="217" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="asdf.png" id="UNr-dH-LUU">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Lalalala testing activity item subtitle, a very long subtitle. Let's see how it's handled" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s0u-pX-P1g">
+                                            <rect key="frame" x="73" y="23" width="217" height="36"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="asdf.png" id="pbn-aY-T2v">
                                             <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -1526,9 +1549,171 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Activity" image="comments.png" id="ODw-db-PzD"/>
+                    <navigationItem key="navigationItem" title="Activity" id="GTu-1e-erL"/>
+                    <connections>
+                        <segue destination="2qR-Xp-Eeb" kind="push" identifier="showComment" id="Omx-Mz-DQ1"/>
+                    </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1113" y="-276"/>
+            <point key="canvasLocation" x="1113" y="-874"/>
+        </scene>
+        <scene sceneID="yFW-Xp-wit">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7X-wd-rLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2qR-Xp-Eeb" customClass="CommentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oYJ-tb-eM7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="rwB-a3-fgM">
+                                <rect key="frame" x="0.0" y="323" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Trash" id="L4J-mT-b5R">
+                                        <color key="tintColor" red="0.78039222959999999" green="0.1294117719" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="trashComment:" destination="2qR-Xp-Eeb" id="6rZ-u3-vdW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3pV-l8-olb"/>
+                                    <barButtonItem title="Approve" id="yt2-JI-R3e">
+                                        <connections>
+                                            <action selector="approveComment:" destination="2qR-Xp-Eeb" id="Au7-DS-zTd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bHg-Zi-rm6"/>
+                                    <barButtonItem title="Reply" id="1rL-02-fzt">
+                                        <connections>
+                                            <action selector="replyToComment:" destination="2qR-Xp-Eeb" id="6R0-nY-cX7"/>
+                                            <segue destination="rQ3-xG-76X" kind="modal" identifier="replyToComment" id="R9W-d7-dCm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="XPf-Vd-4tY">
+                                <rect key="frame" x="5" y="5" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comment Author" lineBreakMode="tailTruncation" minimumFontSize="10" id="WtQ-7s-jr6">
+                                <rect key="frame" x="61" y="5" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="author@comment.com" lineBreakMode="tailTruncation" minimumFontSize="10" id="Pqp-K5-GQq">
+                                <rect key="frame" x="61" y="20" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="http://icomment.com/" lineBreakMode="tailTruncation" minimumFontSize="10" id="Knu-as-ALq">
+                                <rect key="frame" x="61" y="34" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mB8-aE-9y7">
+                                <rect key="frame" x="0.0" y="61" width="320" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="in reply to That's Cute">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <webView contentMode="scaleToFill" id="G8r-0h-5QB">
+                                <rect key="frame" x="0.0" y="85" width="320" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comment" id="xUP-8T-q9w"/>
+                    <connections>
+                        <outlet property="authorAvatarImageView" destination="XPf-Vd-4tY" id="Amh-l5-7JO"/>
+                        <outlet property="authorEmailLabel" destination="Pqp-K5-GQq" id="ijR-2l-wN3"/>
+                        <outlet property="authorNameLabel" destination="WtQ-7s-jr6" id="QO0-vy-sse"/>
+                        <outlet property="authorUrlLabel" destination="Knu-as-ALq" id="Ydn-nB-mLa"/>
+                        <outlet property="contentWebView" destination="G8r-0h-5QB" id="LeK-GQ-l0C"/>
+                        <outlet property="inReplyToLabel" destination="mB8-aE-9y7" id="UjO-zW-fag"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1581" y="-874"/>
+        </scene>
+        <scene sceneID="trg-dv-Qnz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afX-a7-JB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rQ3-xG-76X" customClass="ReplyToCommentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJJ-Kh-zeT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="i5f-25-Ubv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Reply" id="2Sc-Sa-07j">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3DC-7S-Exn">
+                                            <connections>
+                                                <action selector="cancel:" destination="rQ3-xG-76X" id="m4f-YN-E02"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="waU-gM-B0B">
+                                            <connections>
+                                                <action selector="save:" destination="rQ3-xG-76X" id="cEa-p3-QKr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" id="vc4-F4-hqv">
+                                <rect key="frame" x="0.0" y="244" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CfT-V0-APj">
+                                <rect key="frame" x="0.0" y="216" width="320" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="Replying to Frank:" backgroundImage="replyToolbar.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inReplyToButtonTapped:" destination="rQ3-xG-76X" eventType="touchUpInside" id="s1L-Dh-M5W"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Jsa-T6-iFG">
+                                <rect key="frame" x="0.0" y="44" width="320" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentWebView" destination="vc4-F4-hqv" id="bZt-uQ-XNy"/>
+                        <outlet property="inReplyToButton" destination="CfT-V0-APj" id="ETA-OH-72C"/>
+                        <outlet property="replyTextView" destination="Jsa-T6-iFG" id="zea-J9-FRw"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-874"/>
         </scene>
         <scene sceneID="kfL-F9-PY8">
             <objects>
@@ -1694,7 +1879,7 @@
                     <connections>
                         <segue destination="lwe-Gb-fuM" kind="modal" identifier="welcomeScreen" modalTransitionStyle="flipHorizontal" id="4pP-I8-eco"/>
                         <segue destination="FN1-DH-7ug" kind="relationship" relationship="viewControllers" id="6wi-Cs-Rph"/>
-                        <segue destination="CUI-5C-Cgp" kind="relationship" relationship="viewControllers" id="3SO-8T-tFj"/>
+                        <segue destination="VYU-ZJ-OKn" kind="relationship" relationship="viewControllers" id="syl-vH-BYO"/>
                         <segue destination="iMl-h4-gOw" kind="relationship" relationship="viewControllers" id="l2s-Xk-s00"/>
                         <segue destination="XYa-kt-5h8" kind="relationship" relationship="viewControllers" id="VzR-uO-3UC"/>
                         <segue destination="Mo5-GX-GIm" kind="relationship" relationship="viewControllers" id="h9T-9v-WUL"/>
@@ -1744,6 +1929,7 @@
         <image name="posts.png" width="30" height="30"/>
         <image name="preview.png" width="16" height="16"/>
         <image name="read.png" width="28" height="24"/>
+        <image name="replyToolbar.png" width="1" height="44"/>
         <image name="settings.png" width="16" height="16"/>
         <image name="stats.png" width="26" height="26"/>
         <image name="tabPointer.png" width="16" height="16"/>
@@ -1761,6 +1947,20 @@
         </class>
         <class className="ActivityViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivityViewController.h"/>
+        </class>
+        <class className="CommentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="approveComment:"/>
+                <relationship kind="action" name="replyToComment:"/>
+                <relationship kind="action" name="trashComment:"/>
+                <relationship kind="outlet" name="authorAvatarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="authorEmailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authorNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="authorUrlLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="contentWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="inReplyToLabel" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="EditorViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditorViewController.h"/>
@@ -1799,6 +1999,17 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ReaderViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ReplyToCommentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReplyToCommentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="inReplyToButtonTapped:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="commentWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="inReplyToButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="replyTextView" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="SwipeTableViewCell" superclassName="UITableViewCell">

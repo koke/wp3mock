@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "ReaderViewController.h"
+#import "ActivityViewController.h"
 
 @implementation MasterViewController
 @synthesize quickPostViewController = __quickPostViewController;
@@ -38,6 +39,18 @@
 }
 */
 
+- (void)addComment:(id)object {
+    NSLog(@"addComment");
+    NSDictionary *comment = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @"Frank", @"authorName",
+                             @"frank@whales.com", @"authorEmail",
+                             @"http://frank.whales.com/", @"authorUrl",
+                             @"A whale walks into a bar...", @"postTitle",
+                             @"Shut up Fred, you're drunk", @"content",
+                             nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewComment" object:comment];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,6 +60,7 @@
     postButton.imageView.image = [UIImage imageNamed:@"asdf"];
     [postButton addTarget:self action:@selector(quickPost:) forControlEvents:UIControlEventTouchUpInside];
 //    [self.tabBar addSubview:postButton];
+    [self performSelector:@selector(addComment:) withObject:nil afterDelay:5];
 }
 
 - (void)viewDidUnload
