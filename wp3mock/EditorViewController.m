@@ -9,6 +9,7 @@
 #import "EditorViewController.h"
 
 @implementation EditorViewController
+@synthesize titleTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,6 +50,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.titleTextField = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -58,6 +60,17 @@
 
 
 - (IBAction)dismiss:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)save:(id)sender {
+    NSString *title = titleTextField.text;
+    if (title == nil || [title isEqualToString:@""]) {
+        title = @"<Untitled post>";
+    }
+    NSDictionary *newPost = [NSDictionary dictionaryWithObjectsAndKeys:title, @"title", nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewPost" object:newPost];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 

@@ -533,7 +533,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="XHS-mW-0CB">
                                             <connections>
-                                                <action selector="dismiss:" destination="177-FN-Loq" id="xYZ-av-HiL"/>
+                                                <action selector="save:" destination="177-FN-Loq" id="F3s-sl-9xm"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -543,6 +543,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="emY-um-esu"/>
+                    <connections>
+                        <outlet property="titleTextField" destination="XS9-Dt-BmB" id="Fwz-ft-xYI"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2508" y="1413"/>
@@ -1873,6 +1876,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditorViewController.h"/>
             <relationships>
                 <relationship kind="action" name="dismiss:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="LoginViewController" superclassName="UITableViewController">

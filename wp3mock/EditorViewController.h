@@ -9,5 +9,7 @@
 
 
 @interface EditorViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *titleTextField;
 - (IBAction)dismiss:(id)sender;
+- (IBAction)save:(id)sender;
 @end
