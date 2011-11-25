@@ -7,8 +7,12 @@
 //
 
 #import "QuickPhotoViewController.h"
+#import <MobileCoreServices/UTCoreTypes.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @implementation QuickPhotoViewController
+@synthesize sourceType;
+@synthesize photo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,6 +44,44 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    [thumbnailView release]; thumbnailView = nil;
+    [titleTextField release]; titleTextField = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.photo == nil) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = self.sourceType;
+        picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:self.sourceType]; 
+        picker.delegate = self;
+        [self presentModalViewController:picker animated:YES];
+        [picker release];        
+    }
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    picker.delegate = nil;
+    [picker dismissModalViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+
+    if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
+        self.title = @"Quick Photo";
+        self.photo = (UIImage *)[info objectForKey:UIImagePickerControllerOriginalImage];
+    } else {
+        self.title = @"Quick Video";
+        NSURL *videoURL = [info valueForKey:UIImagePickerControllerMediaURL];
+        MPMoviePlayerController *mp = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+        self.photo = [mp thumbnailImageAtTime:(NSTimeInterval)2.0 timeOption:MPMovieTimeOptionNearestKeyFrame];
+        [mp stop];
+        [mp release];
+    }
+    thumbnailView.image = self.photo;
+    [picker dismissModalViewControllerAnimated:YES];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -48,7 +90,18 @@
 }
 
 - (IBAction)dismiss:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)save:(id)sender {
+    NSString *title = titleTextField.text;
+    if (title == nil || [title isEqualToString:@""]) {
+        title = [NSString stringWithFormat:@"A %@ post", self.title];
+    }
+    NSDictionary *newPost = [NSDictionary dictionaryWithObjectsAndKeys:title, @"title", self.photo, @"image", nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewPost" object:newPost];
+
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

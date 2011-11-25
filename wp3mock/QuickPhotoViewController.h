@@ -8,6 +8,13 @@
 
 
 
-@interface QuickPhotoViewController : UIViewController
+@interface QuickPhotoViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
+    IBOutlet UIImageView *thumbnailView;
+    IBOutlet UITextField *titleTextField;
+}
+
+@property (assign) UIImagePickerControllerSourceType sourceType;
+@property (strong) UIImage *photo;
 - (IBAction)dismiss:(id)sender;
+- (IBAction)save:(id)sender;
 @end

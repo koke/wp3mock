@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuickPostViewController : UITableViewController
-
+@interface QuickPostViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
+    NSMutableArray *__items;
+    UITableView *__tableView;
+}
+@property (strong) NSMutableArray *items;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+- (void)newPost:(NSDictionary *)post;
 @end

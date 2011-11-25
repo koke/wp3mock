@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E118FB5614742C1B0086C33C /* QuickPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E118FB5514742C1B0086C33C /* QuickPostViewController.m */; };
+		E1225A34147E5FD300B4F3A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1225A33147E5FD300B4F3A0 /* MobileCoreServices.framework */; };
 		E1259B781471185F00C290F0 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1259B741471185F00C290F0 /* libTestFlight.a */; };
 		E1259B791471185F00C290F0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B751471185F00C290F0 /* README.txt */; };
 		E1259B7A1471185F00C290F0 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1259B761471185F00C290F0 /* release_notes.txt */; };
@@ -54,6 +55,7 @@
 		E1AD11A7147574AC0027C2D0 /* posts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A5147574AC0027C2D0 /* posts@2x.png */; };
 		E1AD11AA147574CB0027C2D0 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A8147574CB0027C2D0 /* comments.png */; };
 		E1AD11AB147574CB0027C2D0 /* comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AD11A9147574CB0027C2D0 /* comments@2x.png */; };
+		E1D8C011147FAA7500F72CEF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D8C010147FAA7500F72CEF /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,7 @@
 /* Begin PBXFileReference section */
 		E118FB5414742C1B0086C33C /* QuickPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickPostViewController.h; sourceTree = "<group>"; };
 		E118FB5514742C1B0086C33C /* QuickPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickPostViewController.m; sourceTree = "<group>"; };
+		E1225A33147E5FD300B4F3A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		E1259B741471185F00C290F0 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		E1259B751471185F00C290F0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		E1259B761471185F00C290F0 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		E1AD11A5147574AC0027C2D0 /* posts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "posts@2x.png"; path = "../../WPiOS3/wp3mock/posts@2x.png"; sourceTree = "<group>"; };
 		E1AD11A8147574CB0027C2D0 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comments.png; path = ../../WPiOS3/wp3mock/comments.png; sourceTree = "<group>"; };
 		E1AD11A9147574CB0027C2D0 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@2x.png"; path = "../../WPiOS3/wp3mock/comments@2x.png"; sourceTree = "<group>"; };
+		E1D8C010147FAA7500F72CEF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D8C011147FAA7500F72CEF /* MediaPlayer.framework in Frameworks */,
+				E1225A34147E5FD300B4F3A0 /* MobileCoreServices.framework in Frameworks */,
 				E1916CF3146D2C0A0039F9AC /* UIKit.framework in Frameworks */,
 				E1916CF5146D2C0A0039F9AC /* Foundation.framework in Frameworks */,
 				E1916CF7146D2C0A0039F9AC /* CoreGraphics.framework in Frameworks */,
@@ -208,6 +214,8 @@
 		E1916CF1146D2C0A0039F9AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1D8C010147FAA7500F72CEF /* MediaPlayer.framework */,
+				E1225A33147E5FD300B4F3A0 /* MobileCoreServices.framework */,
 				E1916CF2146D2C0A0039F9AC /* UIKit.framework */,
 				E1916CF4146D2C0A0039F9AC /* Foundation.framework */,
 				E1916CF6146D2C0A0039F9AC /* CoreGraphics.framework */,
