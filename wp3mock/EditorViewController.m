@@ -70,7 +70,9 @@
     }
     NSDictionary *newPost = [NSDictionary dictionaryWithObjectsAndKeys:title, @"title", nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NewPost" object:newPost];
-    
+
+    [TestFlight passCheckpoint:@"Publish Post"];
+
     [self dismissModalViewControllerAnimated:YES];
 }
 

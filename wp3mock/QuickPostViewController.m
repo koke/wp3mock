@@ -83,6 +83,7 @@
         int pctg = (int)(progress * 100);
         return [NSString stringWithFormat:@"Uploading: %d%%", pctg];
     } else {
+        [TestFlight passCheckpoint:@"Upload failed"];
         return @"Failed, tap to retry";
     }
 }
@@ -181,6 +182,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSMutableDictionary *post = [__items objectAtIndex:indexPath.row];
     [self startUpload:post];
+    [TestFlight passCheckpoint:@"Retried upload"];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

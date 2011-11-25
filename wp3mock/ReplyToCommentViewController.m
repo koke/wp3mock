@@ -97,6 +97,8 @@
                              nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NewComment" object:newComment];
 
+    [TestFlight passCheckpoint:@"Replied to comment"];
+
     [self cancel:sender];
 }
 

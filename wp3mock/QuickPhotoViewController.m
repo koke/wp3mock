@@ -102,6 +102,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NewPost" object:newPost];
 
     [self.navigationController popViewControllerAnimated:YES];
+    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Publish %@", self.title]];
 }
 
 @end
