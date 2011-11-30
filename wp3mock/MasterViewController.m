@@ -49,6 +49,7 @@
                              @"Shut up Fred, you're drunk", @"content",
                              nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NewComment" object:comment];
+//    [self performSelector:@selector(addComment:) withObject:nil afterDelay:5];
 }
 
 - (void)viewDidLoad
