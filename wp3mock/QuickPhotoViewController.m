@@ -57,6 +57,9 @@
         picker.delegate = self;
         [self presentModalViewController:picker animated:YES];
         [picker release];        
+    } else {
+        self.title = @"Quick Photo";
+        thumbnailView.image = self.photo;
     }
 }
 

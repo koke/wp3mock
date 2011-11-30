@@ -14,5 +14,7 @@
 }
 @property (strong) NSMutableArray *items;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UIScrollView *galleryScrollView;
+@property (nonatomic, strong) UIImage *selectedImage;
 - (void)newPost:(NSDictionary *)post;
 @end

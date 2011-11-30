@@ -6,15 +6,20 @@
 //  Copyright (c) 2011 Automattic. All rights reserved.
 //
 
+#import <AssetsLibrary/AssetsLibrary.h>
 #import "QuickPostViewController.h"
 #import "QuickPhotoViewController.h"
 
 @implementation QuickPostViewController
 @synthesize items = __items;
 @synthesize tableView = __tableView;
+@synthesize galleryScrollView = __galleryScrollView;
+@synthesize selectedImage;
 
 - (void)dealloc {
     self.tableView = nil;
+    self.galleryScrollView = nil;
+    self.selectedImage = nil;
     [__items release]; __items = nil;
     [super dealloc];
 }
@@ -56,11 +61,38 @@
 }
 */
 
+- (void)photoTapped:(id)sender {
+    [self performSegueWithIdentifier:@"quickPhotoLibrary" sender:sender];
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 //    [self newPost:[NSDictionary dictionaryWithObject:@"A test post" forKey:@"title"]];
+    __block CGFloat x = 5.0f;
+    ALAssetsLibrary* library = [[ALAssetsLibrary alloc] init];
+    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        if (group) {
+            NSLog(@"group: %@", [group valueForProperty:ALAssetsGroupPropertyName]);
+            [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+                UIButton *imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+                [imageButton setBackgroundImage:[UIImage imageWithCGImage:result.thumbnail] forState:UIControlStateNormal];
+                [imageButton addTarget:self action:@selector(photoTapped:) forControlEvents:UIControlEventTouchUpInside];
+                imageButton.frame = CGRectMake(x, 5.0f, 64, 64);
+                imageButton.tag = index;
+                x += 69.0f;
+                [self.galleryScrollView addSubview:imageButton];
+                self.galleryScrollView.contentSize = CGSizeMake(x + 5.0f, self.galleryScrollView.frame.size.height);
+                if (x > 600) {
+                    *stop = YES;
+                }
+            }];
+        }
+    } failureBlock:^(NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+    [library release];
 }
 
 - (void)viewDidUnload
@@ -133,11 +165,18 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"segue: %@", segue);
+    NSLog(@"sender: %@", sender);
+    QuickPhotoViewController *qpController = (QuickPhotoViewController *)segue.destinationViewController;
+    if ([sender isKindOfClass:[UIButton class]]) {
+        UIImage *thumbnail = [(UIButton *)sender backgroundImageForState:UIControlStateNormal];
+        if (thumbnail) {
+            qpController.photo = thumbnail;
+        }
+    }
     if ([segue.identifier isEqualToString:@"quickPhotoCamera"]) {
-        QuickPhotoViewController *qpController = (QuickPhotoViewController *)segue.destinationViewController;
         qpController.sourceType = UIImagePickerControllerSourceTypeCamera;
     } else if ([segue.identifier isEqualToString:@"quickPhotoLibrary"]) {
-        QuickPhotoViewController *qpController = (QuickPhotoViewController *)segue.destinationViewController;
         qpController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;        
     }
 }
