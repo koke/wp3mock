@@ -8,6 +8,8 @@
 
 #import "ActivityViewController.h"
 #import "CommentViewController.h"
+#import "NSString+Helpers.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface ActivityViewController(PrivateMethods)
 - (void)addItemWithData:(NSDictionary *)itemData;
@@ -122,9 +124,14 @@
     // Configure the cell...
     NSDictionary *itemData = [items objectAtIndex:indexPath.row];
     NSString *authorName = [itemData objectForKey:@"authorName"];
+    NSString *authorEmail = [itemData objectForKey:@"authorEmail"];
     NSString *postTitle = [itemData objectForKey:@"postTitle"];
     NSString *content = [itemData objectForKey:@"content"];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ commented on %@", authorName, postTitle];
+    if (authorEmail) {
+        [cell.imageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://gravatar.com/avatar/%@?d=identicon&s=64", [authorEmail md5]]] placeholderImage:[UIImage imageNamed:@"asdf"]];
+    }
+    
     cell.detailTextLabel.text = content;
     
     return cell;
